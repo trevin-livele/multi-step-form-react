@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.font-face-bold {
+  font-family: "UbuntuBold";
+ }
+ .font-face-medium {
+  font-family: "UbuntuMedium";
+ }
+ .font-face-regular {
+  font-family: "UbuntuRegular";
+ }
+ 

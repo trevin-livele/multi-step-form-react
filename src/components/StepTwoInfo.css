@@ -1,0 +1,154 @@
+.right-content{
+    display: flex;
+    flex-direction: column;
+}
+  
+.p-info{
+    margin-top: -10rem;
+    font-size:xx-large;
+    margin-right: 14rem;
+}
+
+
+.p-desc{
+    margin-top: 1rem;
+    font-size: medium;
+    margin-top: -1rem;
+    margin-right: 7rem;
+}
+
+
+
+  .next-btn button{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 6%;
+    margin: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  /* .steps{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 5pc;
+    margin-bottom: 5.6pc;
+    padding: 0%;
+  }
+   */
+
+  
+.arcade{
+  margin-top: 5rem;
+}
+
+
+.go-back{
+  color: white;
+  padding: 5px 350px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 6%;
+  margin: 3rem;
+  position: absolute;
+  bottom: 0.9rem;
+  right: 0.9rem;
+}
+  
+
+.go-back a{
+  text-decoration: none;
+  color: #0d2b3f;
+  font-size: medium;
+  font-style: italic;
+}
+   
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.confirm{
+  background-color: grey;
+  padding: 12px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6rem 4rem 6rem 0rem;
+  position: absolute;
+  bottom: 5rem;
+  right: 0rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+
+}
+
+.monthly{
+  padding-right: 2rem;
+}
+.yearly{
+  padding-left: 2rem;
+}
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 80%;
+      height: 60%;
+      font-size: 1.2rem;
+    }
+  }
+  

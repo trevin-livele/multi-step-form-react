@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import BaseLayout from './components/BaseLayout';
+import MainLayout from './components/MainLayout';
 
 function App() {
   return (
-    <BaseLayout/>
+    <MainLayout/>
   );
 }
 

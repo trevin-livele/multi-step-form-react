@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "UbuntuBold";
+  src: local("UbuntuBold"),
+   url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  }
+  
+@font-face {
+  font-family: "UbuntuMedium";
+  src: local("UbuntuMedium"),
+   url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: medium;
+  }
+  @font-face {
+    font-family: "UbuntuRegular";
+    src: local("UbuntuBold"),
+     url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: regular;
+    }

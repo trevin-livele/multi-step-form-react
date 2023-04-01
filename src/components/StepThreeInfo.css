@@ -1,0 +1,81 @@
+.right-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+  
+.p-info{
+    margin-top: -10rem;
+    font-size:xx-large;
+    margin-right: 14rem;
+}
+
+
+.p-desc{
+    margin-top: 1rem;
+    font-size: medium;
+    margin-top: -1rem;
+}
+
+
+.labeled{
+    margin-right: 16rem;
+}
+
+.labeled-name{
+    margin-right: 22rem;
+}
+
+
+
+
+  .next-btn button{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 6%;
+    margin: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .steps{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 5pc;
+    margin-bottom: 5.6pc;
+    padding: 0%;
+  }
+
+  .step-desc h6{
+    /* margin-top: 0.5rem; */
+    /* padding: 5%; */
+  }
+
+ a{
+    text-decoration: none;
+    color: #0d2b3f;
+    font-size: medium;
+    font-style: italic;
+  }
+     
+ .addOn-three{
+    border: 2px solid #467da2;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    border-radius: 4px;
+    margin: 7px;
+    padding: 7px;
+    font-size: small;
+ }
+  
+
+

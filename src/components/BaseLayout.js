@@ -1,6 +1,10 @@
 import React from 'react';
 
 import './BaseLayout.css';
+import StepOneInfo from './StepOneInfo';
+import StepTwoInfo from './StepTwoInfo';
+import StepThreeInfo from './StepThreeInfo';
+import StepFourInfo from './StepFourInfo';
 
 const BaseLayout = () => {
 
@@ -26,7 +30,7 @@ const BaseLayout = () => {
                                 <span>1</span>
                             </div>
                             <div className="step">
-                                <span className="step-text">Step 1</span>
+                                <span className="step-text font-face-regular">Step 1</span>
                                 <br />
                                 YOUR INFO
                             </div>
@@ -37,7 +41,7 @@ const BaseLayout = () => {
                             <div className="circle-unclicked">
                                 <span>2</span>
                             </div>
-                            <div className="step">Step 2
+                            <div className="step font-face-regular">Step 2
                                 <br />
                                 SELECT PLAN
                             </div>
@@ -49,7 +53,7 @@ const BaseLayout = () => {
                             <div className="circle-unclicked">
                                 <span>3</span>
                             </div>
-                            <div className="step">Step 3
+                            <div className="step font-face-regular">Step 3
                                 <br />
                                 ADD-ONS
                             </div>
@@ -61,7 +65,7 @@ const BaseLayout = () => {
                             <div className="circle-unclicked">
                                 <span>4</span>
                             </div>
-                            <div className="step">Step 4
+                            <div className="step font-face-regular">Step 4
                                 <br />
                                 SUMMARY
                             </div>
@@ -70,18 +74,10 @@ const BaseLayout = () => {
 
                 </div>
 
-                <div className="right-content">
-                    <h1 className="p-info">Personal Info</h1>
-
-                    <h2 className="p-desc">please provide your name, email address and phone number.</h2>
-
-                    <label className="labeled-name">Name</label>
-                    <input type="text" />
-                    <label className="labeled">Email Address</label>
-                    <input type="email" />
-                    <label className="labeled">Phone Number</label>
-                    <input type="number" />
-                </div>
+            <StepOneInfo/>
+            {/* <StepTwoInfo/> */}
+            {/* <StepThreeInfo/> */}
+            {/* <StepFourInfo/> */}
 
                 <div className="next-btn">
                     <button>
