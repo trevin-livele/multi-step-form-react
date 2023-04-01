@@ -1,0 +1,10 @@
+.th-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.element {
+    margin: 0 auto;
+  }

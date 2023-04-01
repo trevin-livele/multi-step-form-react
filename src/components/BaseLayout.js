@@ -5,6 +5,7 @@ import StepOneInfo from './StepOneInfo';
 import StepTwoInfo from './StepTwoInfo';
 import StepThreeInfo from './StepThreeInfo';
 import StepFourInfo from './StepFourInfo';
+import ThankYou from './ThankYou';
 
 const BaseLayout = () => {
 
@@ -74,10 +75,11 @@ const BaseLayout = () => {
 
                 </div>
 
-            <StepOneInfo/>
+            {/* <StepOneInfo/> */}
             {/* <StepTwoInfo/> */}
             {/* <StepThreeInfo/> */}
             {/* <StepFourInfo/> */}
+            {/* <ThankYou/> */}
 
                 <div className="next-btn">
                     <button>

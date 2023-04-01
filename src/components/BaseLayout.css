@@ -71,7 +71,7 @@ html {
 }
 
 .next-btn button {
-    background-color: darkblue;
+    /* background-color: rgb(29, 29, 90); */
     border: none;
     color: white;
     padding: 10px 10px;
@@ -95,10 +95,7 @@ html {
     padding: 0%;
 }
 
-.step-desc h6 {
-    /* margin-top: 0.5rem; */
-    /* padding: 5%; */
-}
+
 
 a {
     text-decoration: none;
@@ -150,10 +147,10 @@ a {
     margin: 3rem;
 } */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .card {
         width: 80%;
         height: 60%;
         font-size: 1.2rem;
     }
-}
+} */
