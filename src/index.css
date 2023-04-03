@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: none;
 }
 
 code {
@@ -16,19 +17,20 @@ code {
 @font-face {
   font-family: "UbuntuBold";
   src: local("UbuntuBold"),
-   url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
+    url("./assets/fonts/Ubuntu-Bold.ttf") format("truetype");
   font-weight: bold;
-  }
-  
+}
+
 @font-face {
   font-family: "UbuntuMedium";
   src: local("UbuntuMedium"),
-   url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
+    url("./assets/fonts/Ubuntu-Medium.ttf") format("truetype");
   font-weight: medium;
-  }
-  @font-face {
-    font-family: "UbuntuRegular";
-    src: local("UbuntuBold"),
-     url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
-    font-weight: regular;
-    }
+}
+
+@font-face {
+  font-family: "UbuntuRegular";
+  src: local("UbuntuBold"),
+    url("./assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: regular;
+}
