@@ -1,7 +1,33 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./StepFourInfo.css";
 
 const FinishUp = () => {
+  const navigate = useNavigate();
+  const personalInfo = JSON.parse(sessionStorage.getItem("personlInfor"));
+  const plans = JSON.parse(sessionStorage.getItem("plans"));
+  const addons = JSON.parse(sessionStorage.getItem("addons"));
+  let data = {
+    personalInfo: { ...personalInfo },
+    plans: { ...plans },
+    addons: { ...addons },
+  };
+  const sendDataToFirebase = async () => {
+    const response = await fetch(
+      "https://formstep-f8b04-default-rtdb.firebaseio.com/posts.json",
+      {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    if (response) {
+      navigate("/thank-you");
+    }
+  };
   return (
     <div class="right-content">
       <h1 class="p-info">Finishing up</h1>
@@ -26,6 +52,11 @@ const FinishUp = () => {
           <h3>Larger Storage</h3>
           <span>+$1/mo</span>
         </div>
+      </div>
+      <div className="next-btn">
+        <button>
+          <button onClick={sendDataToFirebase}>Next Step</button>
+        </button>
       </div>
     </div>
   );

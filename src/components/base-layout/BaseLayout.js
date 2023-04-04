@@ -63,7 +63,7 @@ const BaseLayout = () => {
         </div>
         <div className="next-btn">
           <button>
-            <a href="./step2.html">Next Step</a>
+            <a>Next Step</a>
           </button>
         </div>
       </div>

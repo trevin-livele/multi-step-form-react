@@ -1,102 +1,56 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./StepThreeInfo.css";
 
 const PickAddons = () => {
-  const [addonData, setAddonData] = useState({});
-  const [onlineServiceAddonStatus, setOnlineServiceAddonStatus] =
-    useState(false);
-  const [largerStorageAddonStatus, setLargerStorageAddonStatus] =
-    useState(false);
-  const [customAddonStatus, setCustomAddonStatus] = useState(false);
+  const navigate = useNavigate();
+  const addons = [
+    { name: "multiplayer", value: "$1mo" },
+    { name: "cloud", value: "$2mo" },
+    { name: "custome", value: "$2mo" },
+  ];
 
-  const addOnlineService = (event) => {
-    const value = event.target.checked;
-    setOnlineServiceAddonStatus(value);
-  };
-
-  const addCustomAddon = (event) => {
-    const value = event.target.checked;
-    setCustomAddonStatus(value);
-  };
-  const addLargerStorageAddon = (event) => {
-    const value = event.target.checked;
-    setLargerStorageAddonStatus(value);
-  };
   const proceed = () => {
-    if (onlineServiceAddonStatus) {
-      setAddonData({
-        ...addonData,
-        multiplayer: "$1mo",
-      });
-    }
-    if (largerStorageAddonStatus) {
-      setAddonData({
-        ...addonData,
-        cloud: "$2mo",
-      });
-    }
-    if (customAddonStatus) {
-      setAddonData({
-        ...addonData,
-        custome: "$2mo",
-      });
-    }
-
-    console.log(addonData);
+    navigate("/finish-up");
+    sessionStorage.setItem("addons", JSON.stringify(checkedItems));
+  };
+  const [checkedItems, setCheckedItems] = useState({});
+  const handleChange = (event, planName, planValue) => {
+    setCheckedItems({
+      ...checkedItems,
+      selected: event.target.checked,
+      [planName]: planValue,
+    });
   };
   return (
     <div class="right-content">
       <h1 class="p-info">Pick add-ons</h1>
       <h2 class="p-desc">Add-ons help enhance your gaming expirience.</h2>
-      <div class="addOn-three">
-        <input
-          type="checkbox"
-          checked={onlineServiceAddonStatus}
-          id="myCheckbox"
-          name="myCheckbox"
-          onChange={addOnlineService}
-        />
+      {addons.map((item, index) => {
+        return (
+          <div class="addOn-three" key={index}>
+            <input
+              type="checkbox"
+              checked={checkedItems[item]}
+              id="myCheckbox"
+              name="myCheckbox"
+              onChange={() => handleChange(event, item.name, item.value)}
+            />
 
-        <h3>
-          Online Service
-          <br /> Access to multiplayer games
-        </h3>
+            <h3>
+              Online Service
+              <br /> Access to multiplayer games
+            </h3>
 
-        <span>+$1/mo</span>
+            <span>+$1/mo</span>
+          </div>
+        );
+      })}
+      <div className="next-btn">
+        <button>
+          <button onClick={proceed}>Next Step</button>
+        </button>
       </div>
-      <div class="addOn-three">
-        <input
-          type="checkbox"
-          checked={largerStorageAddonStatus}
-          id="myCheckbox"
-          name="myCheckbox"
-          onChange={addLargerStorageAddon}
-        />
-
-        <h3>
-          Online Service
-          <br /> Access to multiplayer games
-        </h3>
-
-        <span>+$1/mo</span>
-      </div>{" "}
-      <div class="addOn-three">
-        <input
-          type="checkbox"
-          checked={customAddonStatus}
-          id="myCheckbox"
-          name="myCheckbox"
-          onChange={addCustomAddon}
-        />
-
-        <h3>
-          Online Service
-          <br /> Access to multiplayer games
-        </h3>
-
-        <span>+$1/mo</span>
-      </div>
-      <button onClick={proceed}>Next</button>
     </div>
   );
 };
