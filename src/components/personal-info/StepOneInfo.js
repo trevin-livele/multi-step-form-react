@@ -119,9 +119,7 @@ const PersonalInfo = () => {
       </div>
 
       <div className="next-btn">
-        <button>
           <button onClick={proceed}>Next Step</button>
-        </button>
       </div>
     </div>
   );

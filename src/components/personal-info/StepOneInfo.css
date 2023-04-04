@@ -28,7 +28,7 @@
   border: 1px solid lightgray;
 }
 
-.next-btn button {
+/* .next-btn button {
   background-color: darkblue;
   border: none;
   color: white;
@@ -42,7 +42,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-}
+} */
 
 .steps {
   display: flex;

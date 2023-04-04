@@ -35,6 +35,7 @@ html {
     flex-direction: column;
     margin-top: -13rem;
     margin-left: 5rem;
+    width: 100%;
 } */
 
 .p-info {
@@ -70,21 +71,7 @@ html {
     border: 2px solid lightgrey;
 }
 
-.next-btn button {
-    /* background-color: rgb(29, 29, 90); */
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    border-radius: 6%;
-    margin: 3rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 
 .steps {
     display: flex;
@@ -142,20 +129,26 @@ a {
     color: lightgray;
 }
 
-/* .container {
-    padding-bottom: 25rem;
-    margin: 3rem;
-} */
 
-/* @media only screen and (max-width: 768px) {
-    .card {
-        width: 80%;
-        height: 60%;
-        font-size: 1.2rem;
-    }
-} */
 
 
 .router-content {
     margin-top: -252px;
 }
+
+ button{
+    background-color: rgb(26, 26, 68);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 6%;
+    margin: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+  }

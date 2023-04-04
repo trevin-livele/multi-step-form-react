@@ -54,9 +54,7 @@ const FinishUp = () => {
         </div>
       </div>
       <div className="next-btn">
-        <button>
           <button onClick={sendDataToFirebase}>Next Step</button>
-        </button>
       </div>
     </div>
   );

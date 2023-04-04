@@ -14,11 +14,14 @@
  }
   
 .addOn-1{
-    background-color: cadetblue;
+    background-color: rgb(244, 244, 246);
+    border-radius: 1rem;
+    margin: 8px;
+    /* padding: 7rem 6rem; */
 }
 
 .service{
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 7px;
 }

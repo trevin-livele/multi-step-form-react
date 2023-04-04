@@ -2,13 +2,15 @@
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+  color: rgb(26, 26, 68);
+
 }
 
 .card-plan {
   width: 40%;
   padding: 30px;
   margin: 0 5px;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   border: 1px solid #ddd;
   border-radius: 0.5rem;
 

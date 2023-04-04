@@ -61,10 +61,8 @@ const BaseLayout = () => {
         <div className="router-content">
           <Outlet />
         </div>
-        <div className="next-btn">
-          <button>
-            <a>Next Step</a>
-          </button>
+        <div>
+         
         </div>
       </div>
     </div>

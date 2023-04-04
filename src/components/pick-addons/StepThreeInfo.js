@@ -47,9 +47,7 @@ const PickAddons = () => {
         );
       })}
       <div className="next-btn">
-        <button>
           <button onClick={proceed}>Next Step</button>
-        </button>
       </div>
     </div>
   );

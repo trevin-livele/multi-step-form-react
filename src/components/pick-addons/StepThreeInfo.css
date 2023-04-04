@@ -29,21 +29,7 @@
 
 
 
-  .next-btn button{
-    background-color: purple;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    border-radius: 6%;
-    margin: 3rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+  
 
   .steps{
     display: flex;
@@ -67,14 +53,17 @@
   }
      
  .addOn-three{
-    border: 2px solid #467da2;
+    border: 3px solid #467da2;
     display: flex;
     justify-content: space-between;
     font-size: small;
     border-radius: 4px;
     margin: 7px;
-    padding: 7px;
+    padding: 10px;
     font-size: small;
+    background-color: rgb(209, 209, 236);
+    width: 100%;
+
  }
   
 
